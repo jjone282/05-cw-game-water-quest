@@ -7,17 +7,57 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Water Quest</h1>
-    <p class="game-instructions">Collect 20 items to complete the game!</p>
-    <div class="stats">
-      <p>Cans Collected: <span id="current-cans">0</span></p>
-      <p>Time Left: <span id="timer">30</span>s</p>
-    </div>
-    <div id="achievements" class="achievement"></div>
-    <div class="game-grid"></div>
-    <button id="start-game">Start Game</button>
-  </div>
+  <main class="container">
+    <header class="hero">
+      <img src="img/cw_logo_horizontal.png" alt="charity: water logo" class="logo" />
+      <h1>Water Quest</h1>
+      <p class="game-instructions">Tap yellow cans to deliver clean water before time runs out.</p>
+    </header>
+
+    <section class="stats" aria-label="Game status">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time: <span id="timer">60</span>s</p>
+      <p>Streak: <span id="streak">0</span></p>
+    </section>
+
+    <section class="controls" aria-label="Game controls">
+      <button id="start-btn" class="btn btn-primary">Start</button>
+      <button id="pause-btn" class="btn" disabled>Pause</button>
+      <button id="restart-btn" class="btn">Restart</button>
+    </section>
+
+    <section class="feedback-area" aria-live="polite">
+      <p id="feedback" class="feedback"></p>
+      <p id="milestone" class="milestone"></p>
+    </section>
+
+    <section class="game-grid" id="game-grid" aria-label="Water can grid">
+      <div class="hole" data-index="0"></div>
+      <div class="hole" data-index="1"></div>
+      <div class="hole" data-index="2"></div>
+      <div class="hole" data-index="3"></div>
+      <div class="hole" data-index="4"></div>
+      <div class="hole" data-index="5"></div>
+      <div class="hole" data-index="6"></div>
+      <div class="hole" data-index="7"></div>
+      <div class="hole" data-index="8"></div>
+    </section>
+
+    <section id="end-screen" class="end-screen hidden" aria-live="polite">
+      <h2>Time's Up!</h2>
+      <p>Final Score: <span id="final-score">0</span></p>
+      <button id="replay-btn" class="btn btn-primary">Replay</button>
+    </section>
+  </main>
+
+  <template id="can-template">
+    <button class="item can" type="button" aria-label="Water can"></button>
+  </template>
+
+  <template id="obstacle-template">
+    <button class="item obstacle" type="button" aria-label="Mud obstacle"></button>
+  </template>
+
   <script src="script.js"></script>
 </body>
 </html>
