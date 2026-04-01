@@ -9,7 +9,9 @@
 <body>
   <main class="container">
     <header class="hero">
-      <img src="img/cw_logo_horizontal.png" alt="charity: water logo" class="logo" />
+      <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit charity: water website">
+        <img src="img/cw_logo_horizontal.png" alt="charity: water logo" class="logo" />
+      </a>
       <h1>Water Quest</h1>
       <p class="game-instructions">Tap yellow cans to deliver clean water before time runs out.</p>
     </header>
@@ -48,6 +50,11 @@
       <p>Final Score: <span id="final-score">0</span></p>
       <button id="replay-btn" class="btn btn-primary">Replay</button>
     </section>
+
+    <p class="donate-cta">
+      Want to help end the water crisis?
+      <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">Click here to donate now.</a>
+    </p>
   </main>
 
   <template id="can-template">
