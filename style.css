@@ -5,7 +5,7 @@
 body {
   font-family: "Avenir Next", "Avenir", "Trebuchet MS", sans-serif;
   margin: 0;
-  padding: clamp(14px, 2.4vh, 24px);
+  padding: clamp(8px, 1.8vh, 18px);
   background: linear-gradient(180deg, #fffbe9 0%, #eaf7ff 60%, #dff3ff 100%);
   color: #1e2a35;
   min-height: 100svh;
@@ -16,7 +16,7 @@ body {
   max-width: min(860px, 96vw);
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.95);
-  padding: clamp(18px, 2.4vh, 30px);
+  padding: clamp(12px, 1.8vh, 24px);
   border-radius: 18px;
   border: 2px solid #ffe589;
   box-shadow: 0 14px 30px rgba(46, 157, 247, 0.16);
@@ -32,7 +32,7 @@ body {
 }
 
 .logo {
-  max-width: clamp(160px, 24vh, 220px);
+  max-width: clamp(130px, 18vh, 190px);
   width: 100%;
   height: auto;
   display: block;
@@ -40,30 +40,30 @@ body {
 }
 
 h1 {
-  font-size: clamp(1.8rem, 4.1vh, 2.4rem);
+  font-size: clamp(1.45rem, 3.4vh, 2.05rem);
   margin: 0;
   color: #0d5e9f;
   letter-spacing: 0.02em;
 }
 
 .game-instructions {
-  font-size: clamp(0.95rem, 2.1vh, 1.15rem);
-  margin: 8px 0 14px;
+  font-size: clamp(0.82rem, 1.8vh, 1rem);
+  margin: 6px 0 10px;
 }
 
 .stats {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   background: #f3fbff;
-  padding: clamp(10px, 1.6vh, 14px) clamp(12px, 1.8vw, 18px);
+  padding: clamp(8px, 1.2vh, 12px) clamp(10px, 1.4vw, 16px);
   border-radius: 12px;
   border: 1px solid #d4efff;
 }
 
 .stats p {
   margin: 0;
-  font-size: clamp(0.95rem, 2vh, 1.1rem);
+  font-size: clamp(0.85rem, 1.8vh, 1rem);
   font-weight: bold;
   color: #1e2a35;
 }
@@ -72,14 +72,14 @@ h1 {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .btn {
   border: none;
   border-radius: 10px;
-  padding: clamp(9px, 1.4vh, 12px) clamp(14px, 1.9vw, 18px);
-  font-size: clamp(0.92rem, 1.85vh, 1.02rem);
+  padding: clamp(7px, 1vh, 10px) clamp(12px, 1.4vw, 16px);
+  font-size: clamp(0.82rem, 1.6vh, 0.95rem);
   font-weight: 700;
   cursor: pointer;
   background: #dff3ff;
@@ -103,17 +103,17 @@ h1 {
 }
 
 .feedback-area {
-  min-height: clamp(50px, 7.5vh, 66px);
-  margin-bottom: 8px;
+  min-height: clamp(40px, 6vh, 56px);
+  margin-bottom: 6px;
   text-align: center;
 }
 
 .feedback,
 .milestone {
-  margin: 6px 0;
-  min-height: 20px;
+  margin: 4px 0;
+  min-height: 16px;
   font-weight: 700;
-  font-size: clamp(0.9rem, 1.85vh, 1.05rem);
+  font-size: clamp(0.78rem, 1.55vh, 1rem);
 }
 
 .feedback {
@@ -127,9 +127,9 @@ h1 {
 .game-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(10px, 1.6vmin, 16px);
+  gap: clamp(8px, 1.3vmin, 14px);
   margin: 0 auto;
-  width: min(65vh, 86vw, 560px);
+  width: min(58vh, 80vw, 500px);
 }
 
 .hole {
@@ -208,9 +208,9 @@ h1 {
 
 .donate-cta {
   margin: auto 0 0;
-  padding-top: 10px;
+  padding-top: 8px;
   text-align: center;
-  font-size: clamp(0.9rem, 1.8vh, 1rem);
+  font-size: clamp(0.78rem, 1.5vh, 0.92rem);
   color: #1e2a35;
 }
 
